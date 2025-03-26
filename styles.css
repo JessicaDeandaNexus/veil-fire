@@ -88,22 +88,6 @@ nav ul li a:hover {
     box-shadow: 0 0 15px orange;
 }
 
-/* Main Content (About/Mission) */
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-main h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-main p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
 /* Footer */
 footer {
     text-align: center;
