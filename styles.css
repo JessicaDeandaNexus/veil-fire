@@ -11,24 +11,37 @@ body {
     color: white;
 }
 
+/* Header and Navigation */
 header {
     position: sticky;
     top: 0;
     background-color: black;
-    z-index: 1000; /* Ensures the header stays on top */
+    z-index: 1000;
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for emphasis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 1rem;
 }
 
@@ -40,9 +53,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: orange; /* Highlight effect when hovering */
+    color: orange;
 }
 
+/* Main Content */
 main {
     padding: 2rem;
     text-align: center;
@@ -58,9 +72,20 @@ main p {
     margin-bottom: 1rem;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: black;
     color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: orange;
 }
