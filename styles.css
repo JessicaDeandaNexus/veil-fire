@@ -106,51 +106,29 @@ footer a:hover {
     color: orange;
 }
 
-/* Main Content */
-main {
+/* Content Box Styling for Signal Subpages */
+.content-box {
+    margin: 2rem auto;
     padding: 2rem;
+    border: 2px solid orange;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0,0,0,1), rgba(255,165,0,0.1));
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.2);
     text-align: center;
 }
 
-main h1, main h2 {
+.content-box h1 {
+    font-size: 2.2rem;
     color: orange;
     margin-bottom: 1rem;
 }
 
-/* Signal Page: Clickable Sections */
-section.clickable {
-    margin: 2rem auto;
-    padding: 1.5rem;
-    border: 1px solid white;
-    border-radius: 8px;
-    max-width: 800px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-section.clickable:hover {
-    background-color: rgba(255, 165, 0, 0.1);
-    box-shadow: 0 0 15px orange;
-}
-
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-section p {
+.content-box p {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
 }
 
-blockquote {
-    font-style: italic;
-    color: orange;
-    margin-top: 1rem;
-}
-
-/* Subpage Lists and Links */
-ul {
+.content-box ul {
     text-align: left;
     margin: 2rem auto;
     padding: 1rem;
@@ -159,51 +137,24 @@ ul {
     max-width: 800px;
 }
 
-ul li {
+.content-box ul li {
     margin: 0.5rem 0;
 }
 
-ul li a {
+.content-box ul li a {
     text-decoration: none;
     color: orange;
-    transition: color 0.3s;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-ul li a:hover {
+.content-box ul li a:hover {
     color: white;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    section, ul {
+    .content-box {
         padding: 1rem;
         max-width: 90%;
     }
-}
-/* Clickable Outlined Buttons */
-section.clickable {
-    margin: 2rem auto;
-    max-width: 800px;
-    text-align: center;
-}
-
-.outlined-btn {
-    display: block;
-    padding: 1.5rem;
-    border: 2px solid white;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
-}
-
-.outlined-btn:hover {
-    background-color: rgba(255, 165, 0, 0.1);
-    box-shadow: 0 0 15px orange;
-    color: orange;
-}
-
-.outlined-btn h2, .outlined-btn p, .outlined-btn blockquote {
-    margin: 0.5rem 0;
-    text-align: center;
 }
