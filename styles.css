@@ -180,3 +180,30 @@ ul li a:hover {
         max-width: 90%;
     }
 }
+/* Clickable Outlined Buttons */
+section.clickable {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.outlined-btn {
+    display: block;
+    padding: 1.5rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.outlined-btn:hover {
+    background-color: rgba(255, 165, 0, 0.1);
+    box-shadow: 0 0 15px orange;
+    color: orange;
+}
+
+.outlined-btn h2, .outlined-btn p, .outlined-btn blockquote {
+    margin: 0.5rem 0;
+    text-align: center;
+}
