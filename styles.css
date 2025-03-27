@@ -208,3 +208,14 @@ form button:hover {
         gap: 1rem;
     }
 }
+/* Gradient Banner */
+.banner {
+    height: 200px; /* Adjust height */
+    background: linear-gradient(to right, #FF4500, #FF6347, #FFA500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    font-size: 2rem;
+}
